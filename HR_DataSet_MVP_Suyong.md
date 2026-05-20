@@ -178,26 +178,32 @@ Kaggle 데이터셋은 좋은 참고 자료이지만, 그대로 서비스 데이
 
 ### 8.1 참고할 수 있는 공공 데이터 사이트
 
-| 사이트 | 활용 목적 |
-|---|---|
-| 공공데이터포털 | 사업체노동력조사, 고용형태, 구인구직 통계 등 조사 |
-| 고용노동통계 | 근로시간, 임금, 이직률, 입직률 등 노동 통계 확인 |
-| KOSIS 국가통계포털 | 산업별, 지역별, 연령별 고용 통계 확인 |
-| 고용24 | 채용, 구직, 취업 관련 흐름 참고 |
+| 우선순위 | 사이트 | 바로 볼 수 있는 링크 | 주요 활용 |
+|---:|---|---|---|
+| 1 | 공공데이터포털 | [고용 관련 데이터 검색](https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=%EA%B3%A0%EC%9A%A9) | 공공기관이 제공하는 고용, 산업, 사업체, 구인구직 관련 파일/API 검색 |
+| 2 | 고용노동통계 | [고용 주제별 통계](https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?leftMenuId=0010001100101&menuId=0010001100101102&upListVal=118_2&vwCdVal=MT_PTITLE) / [임금근로시간 통계](https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?leftMenuId=0010001100101&menuId=0010001100101102&upListVal=118_32&vwCdVal=MT_PTITLE) | 근로시간, 임금, 이직률, 입직률, 사업체 종사자 수 확인 |
+| 3 | KOSIS 국가통계포털 | [고용 통계 검색](https://kosis.kr/search/search.do?query=%EA%B3%A0%EC%9A%A9) / [임금 통계 검색](https://kosis.kr/search/search.do?query=%EC%9E%84%EA%B8%88) | 산업별, 지역별, 연령별 고용 통계와 국가승인통계 확인 |
+| 4 | 고용행정통계 | [고용행정통계 메인](https://eis.work24.go.kr/) / [전체 통계 메뉴](https://eis.work24.go.kr/eisps/etc/selectTotalMenu.do) | 고용24 기반 구인, 구직, 취업 동향과 고용행정 통계 확인 |
+| 5 | 공공데이터포털 개별 자료 | [고용24 구인구직 및 취업동향](https://www.data.go.kr/data/15068741/fileData.do?recommendDataYn=Y) | 구인구직 흐름, 취업 동향, 노동시장 참고 자료 확인 |
+
+검색 링크가 바로 원하는 결과로 열리지 않으면 사이트 검색창에 `고용`, `근로시간`, `이직률`, `임금`, `구인구직` 같은 키워드를 입력하면 된다.
 
 ---
 
 ## 9. 공공통계에서 조사할 항목
 
-| 조사 항목 | 왜 필요한가? | 더미 데이터 반영 예시 |
-|---|---|---|
-| 평균 근로시간 | 초과근무 시간 범위 설정 | 평균 초과근무 0~2시간으로 생성 |
-| 이직률 | 퇴사자 비율 설정 | 전체 이직률 8~15% 수준으로 설정 |
-| 입직률 | 신규 입사자 비율 설정 | 최근 입사자 비율 생성 |
-| 임금 수준 | 월급 범위 설정 | 직급별 급여 범위 생성 |
-| 고용형태 비율 | 정규직/계약직 비율 설정 | 정규직 80%, 계약직 20% 등 |
-| 산업별 고용 규모 | 부서/직무 구성 참고 | 개발, 영업, 인사, 마케팅 등 구성 |
-| 지역별 통계 | 지역 확장 시 참고 | 서울/경기 등 지역별 분포 설정 |
+| 조사 항목 | 바로 볼 수 있는 링크 | 왜 필요한가? | 더미 데이터 반영 예시 |
+|---|---|---|---|
+| 평균 근로시간 | [고용노동통계 - 임금근로시간](https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?leftMenuId=0010001100101&menuId=0010001100101102&upListVal=118_32&vwCdVal=MT_PTITLE) / [KOSIS 근로시간 검색](https://kosis.kr/search/search.do?query=%EA%B7%BC%EB%A1%9C%EC%8B%9C%EA%B0%84) | 초과근무 시간 범위 설정 | 평균 초과근무 0~2시간으로 생성 |
+| 이직률 | [고용노동통계 - 고용](https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?leftMenuId=0010001100101&menuId=0010001100101102&upListVal=118_2&vwCdVal=MT_PTITLE) / [KOSIS 이직률 검색](https://kosis.kr/search/search.do?query=%EC%9D%B4%EC%A7%81%EB%A5%A0) | 퇴사자 비율 설정 | 전체 이직률 8~15% 수준으로 설정 |
+| 입직률 | [고용노동통계 - 고용](https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?leftMenuId=0010001100101&menuId=0010001100101102&upListVal=118_2&vwCdVal=MT_PTITLE) / [KOSIS 입직률 검색](https://kosis.kr/search/search.do?query=%EC%9E%85%EC%A7%81%EB%A5%A0) | 신규 입사자 비율 설정 | 최근 입사자 비율 생성 |
+| 임금 수준 | [고용노동통계 - 임금근로시간](https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?leftMenuId=0010001100101&menuId=0010001100101102&upListVal=118_32&vwCdVal=MT_PTITLE) / [KOSIS 임금 검색](https://kosis.kr/search/search.do?query=%EC%9E%84%EA%B8%88) | 월급 범위 설정 | 직급별 급여 범위 생성 |
+| 고용형태 비율 | [고용노동통계 - 고용형태 검색](https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?searchWord=%EA%B3%A0%EC%9A%A9%ED%98%95%ED%83%9C) / [KOSIS 고용형태 검색](https://kosis.kr/search/search.do?query=%EA%B3%A0%EC%9A%A9%ED%98%95%ED%83%9C) | 정규직/계약직 비율 설정 | 정규직 80%, 계약직 20% 등 |
+| 산업별 고용 규모 | [KOSIS 산업별 취업자 검색](https://kosis.kr/search/search.do?query=%EC%82%B0%EC%97%85%EB%B3%84%20%EC%B7%A8%EC%97%85%EC%9E%90) / [KOSIS 경제상황판 지역 비교](https://kosis.kr/visual/economyBoard/economyRegion.do?lang=kr) | 부서/직무 구성 참고 | 개발, 영업, 인사, 마케팅 등 구성 |
+| 지역별 통계 | [KOSIS 지역별 고용조사 검색](https://kosis.kr/search/search.do?query=%EC%A7%80%EC%97%AD%EB%B3%84%20%EA%B3%A0%EC%9A%A9%EC%A1%B0%EC%82%AC) / [KOSIS 지역별 지표비교](https://kosis.kr/visual/economyBoard/economyRegion.do?lang=kr) | 지역 확장 시 참고 | 서울/경기 등 지역별 분포 설정 |
+
+조사할 때는 먼저 `고용노동통계`에서 근로시간, 임금, 입직률, 이직률을 확인하고, 산업별/지역별 분포는 `KOSIS`에서 확인하면 효율적이다.  
+사이트에서 바로 원하는 표가 보이지 않으면 표의 검색 링크를 연 뒤 검색어를 그대로 다시 입력하면 된다.
 
 ---
 
@@ -726,18 +732,6 @@ MVP_기능정리_이름.md
 ---
 
 ## 28. 역할 분담 추천
-
-| 담당 | 주요 역할 | 산출물 |
-|---|---|---|
-| 데이터셋 담당 | Kaggle HR 데이터셋 조사 | Kaggle 링크, 주요 컬럼 정리 |
-| 공공통계 담당 | 공공데이터, 고용노동통계 조사 | 현실적인 수치 범위 정리 |
-| 데이터 설계 담당 | DB 테이블, 컬럼 정의 | data_schema.md |
-| 더미데이터 담당 | Python 데이터 생성 스크립트 작성 | generate_hr_data.py |
-| 백엔드 담당 | API 및 DB 연동 | API 명세, DB 연결 코드 |
-| 프론트 담당 | 대시보드 UI 구현 | React 화면 |
-| AI 담당 | AI Report 생성 로직 | 프롬프트, 분석 로직 |
-
-4인 팀이라면 아래처럼 나누면 좋다.
 
 | 팀원 | 추천 담당 |
 |---|---|
