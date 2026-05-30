@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.vite/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# 개인 행정 서류 (Git 추적 제외 - git rm --cached 완료)
+프로젝트 폴더/
+
+# 민감 데이터
+공공통계 조사 정리_SuYong/*.xlsx
