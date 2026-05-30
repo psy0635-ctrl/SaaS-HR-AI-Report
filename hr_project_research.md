@@ -79,4 +79,8 @@
 ## 6. Workspace MCP
 
 - **MCP(Model Context Protocol)** 는 Anthropic이 만든 표준 규격. LLM이 외부 툴·데이터에 직접 접근할 수 있게 연결해주는 프로토콜.
-- **Workspace MCP** 는 Google Sheets·Drive 등을 MCP로 연결하는 것. 회사에서 HR 데이터를 Sheets로 관리 중이라면 바로 연동해
+- **Workspace MCP** 는 Google Sheets·Drive 등을 MCP로 연결하는 것. 회사에서 HR 데이터를 Sheets로 관리 중이라면 바로 연동해서 AI 분석 가능.
+- 활용 시나리오: Sheets에서 근태 데이터 읽기 → AI 분석 → **웹 대시보드에서 리포트 확인 → PDF/Excel로 다운로드.**
+- MVP에선 직접 구현 부담이 있어서 **"기존 시스템 연동" 레퍼런스 구조로 참고하고, 고도화 단계에서 붙이는 것이 현실적.**
+
+**키워드:** MCP 프로토콜 / Google Workspace 연동 / 웹 뷰어 + 다운로드 / 고도화 단계
